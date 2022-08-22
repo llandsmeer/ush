@@ -130,6 +130,9 @@ impl Client {
         use std::io::Write;
         self.pty_master.write_all(input).unwrap();
     }
+
+    //pub fn send_key(&mut self, bool control, bool shift, bool alt, char key) {
+    //}
 }
 
 pub struct ClientBuilder {
